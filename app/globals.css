@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 @import "tailwindcss";
 
@@ -14,8 +14,9 @@ body {
 }
 
 @theme {
-  --font-georama: "Georama", sans-serif;
   --font-roboto: "Roboto Mono", monospace;
+  --font-georama: "Georama", sans-serif;
+  --font-archivo-black: "Archivo Black", sans-serif;
   --breakpoint-3xl: 1920px;
 }
 
@@ -37,7 +38,7 @@ body {
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/15 backdrop-blur-xs p-2 px-5 select-none;
+    @apply flex justify-between items-center bg-white/10 backdrop-blur-xs p-2 px-5;
 
     div {
       @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
@@ -86,7 +87,7 @@ body {
     }
 
     .tooltip {
-      @apply py-1! px-3! w-fit! text-center! text-xs! rounded-md! bg-blue-200! text-blue-900! shadow-2xl!;
+      @apply !py-1 !px-3 !w-fit !text-center !text-xs !rounded-md !bg-blue-200 !text-blue-900 !shadow-2xl;
     }
 
     .dock-icon {

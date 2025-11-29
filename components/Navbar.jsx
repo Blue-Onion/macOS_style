@@ -10,33 +10,33 @@ const Navbar = () => {
             <nav>
                 <div className="">
                     <Image
-                    height={15}
-                    width={15}
-                    alt='logo'
+                        height={15}
+                        width={15}
+                        alt='logo'
                         src='/images/logo.svg'
                     />
                     <p className="font-bold">
                         Aditya
                     </p>
-                <ul>
-                    {
-                        navLinks.map((item)=>{
-                            return <li key={item.id}>
+                    <ul>
+                        {
+                            navLinks.map((item) => {
+                                return <li key={item.id}>
                                     {item.name}
-                            </li>
-                        })
-                    }
-                </ul>
+                                </li>
+                            })
+                        }
+                    </ul>
                 </div>
                 <div className="">
                     <ul>
-                        {navIcons.map(({id,img})=>{
-                         return   <li key={id}>
+                        {navIcons.map(({ id, img }) => {
+                            return <li key={id}>
                                 <Image
-                                height={15}
-                                width={15}
-                                alt='logo'
-                                src={img}
+                                    height={15}
+                                    width={15}
+                                    alt='logo'
+                                    src={img}
                                 />
                             </li>
                         })}
