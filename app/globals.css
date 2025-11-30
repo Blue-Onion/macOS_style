@@ -118,7 +118,7 @@ body {
     }
 
     .minimize {
-      @apply size-3.5 rounded-full bg-[#ffc030];
+      @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer;
     }
 
     .maximize {
@@ -130,7 +130,7 @@ body {
     @apply flex items-center justify-between p-2 border-b border-gray-200 select-none text-sm text-gray-400;
   }
 
-  #safari {
+  #arc {
     @apply w-4xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     .search {
@@ -156,7 +156,7 @@ body {
         }
 
         .content {
-          @apply col-span-10 space-y-3;
+          @apply col-span-10 flex flex-col space-y-3;
 
           p {
             @apply text-xs text-gray-500;
@@ -166,9 +166,7 @@ body {
             @apply font-semibold text-base text-gray-800;
           }
 
-          a {
-            @apply text-blue-600 text-xs hover:underline flex items-center gap-3;
-          }
+          
         }
       }
     }

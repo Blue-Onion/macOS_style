@@ -9,6 +9,8 @@ import Navbar from '@/components/Navbar'
 import Welcome from '@/components/Welcome'
 import Dock from '@/components/Dock'
 
+import Arc from '@/windows/Arc'
+
 gsap.registerPlugin(Draggable)
 
 const page = () => {
@@ -18,6 +20,8 @@ const page = () => {
       <Welcome/>
       <Dock/>
       <Terminal/>
+
+      <Arc/>
     </main>
   )
 }
