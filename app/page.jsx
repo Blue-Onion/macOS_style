@@ -8,6 +8,7 @@ import Terminal from '@/windows/Terminal'
 import Navbar from '@/components/Navbar'
 import Welcome from '@/components/Welcome'
 import Dock from '@/components/Dock'
+import Safari from '@/windows/Safari'
 
 gsap.registerPlugin(Draggable)
 
@@ -18,6 +19,7 @@ const page = () => {
       <Welcome/>
       <Dock/>
       <Terminal/>
+      <Safari/>
     </main>
   )
 }
