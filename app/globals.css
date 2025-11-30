@@ -7,7 +7,7 @@ body {
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url("/images/wallpaper.png");
+  background-image: url("/images/wallpaper2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,7 +127,7 @@ body {
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+    @apply flex items-center justify-between p-2 border-b border-gray-200 select-none text-sm text-gray-400;
   }
 
   #safari {
