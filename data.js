@@ -71,55 +71,63 @@ const dockApps = [
   },
 ];
 
-const blogPosts = [
+const achievements = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    title: "Supernova Hackathon Semifinalist",
+    date: "2025",
+    description:
+      "Built an AI-powered web solution under 24 hours during Supernova.",
+    image: "/images/leetcode.png", // placeholder
+    link: "https://certificate-link.com/supernova",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    title: "HackCBS Semifinalist",
+    date: "2024",
+    description:
+      "Participated in one of the largest student-run hackathons at Delhi University.",
+    image: "/images/leetcode.png", // placeholder
+    link: "https://certificate-link.com/hackcbs",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    title: "LeetCode Competitive Programming",
+    date: "2004 — Present",
+    username: "blueonion",
+    image: "/images/leetcode.png", // placeholder
+    link: "https://leetcode.com/u/Blue_onion/",
   },
 ];
 
 const techStack = [
   {
+    category: "Languages",
+    items: ["JavaScript", "TypeScript", "Python", "GO"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["React", "Next.js", "TailwindCSS", "GSAP"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express.js", "REST API", "JWT"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["PostgreSQL", "MongoDB", "Prisma"],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "Deployment",
+    items: ["Docker", "CI/CD", "Vercel"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "GitHub", "Postman", "Linux"],
+  },
+  {
+    category: "Integrations",
+    items: ["Clerk", "Resend", "Gemini AI"],
   },
 ];
 
@@ -205,7 +213,7 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
+  achievements,
   techStack,
   socials,
   photosLinks,
@@ -498,6 +506,5 @@ const WINDOW_CONFIG = {
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
-
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

@@ -8,7 +8,7 @@ import React, { useRef } from 'react'
 import { Tooltip } from 'react-tooltip';
 
 const Dock = () => {
-    const {openWindow,closeWindow,windows}=useWindowStore();
+    const {openWindow,focusWindow,windows}=useWindowStore();
     const dockRef = useRef(null);
     useGSAP(() => {
         const dock = dockRef.current;
@@ -78,7 +78,7 @@ const Dock = () => {
         console.log(window);
         
         if(window.isOpen){
-            closeWindow(app.id);
+            focusWindow(app.id);
         }else{
             openWindow(app.id);
         }
@@ -98,12 +98,13 @@ const Dock = () => {
                         <div key={app.id} className="">
                             <button
                                 type='button'
-                                className='dock-icon'
+                                className='dock-icon flex-col'
                                 aria-label={app.name}
                                 data-tooltip-id="dock-tooltip"
                                 data-tooltip-delay-show={150}
                                 disabled={!app.canOpen}
                                 data-tooltip-content={app.name}
+
                                 onClick={() => toggleApp(app)}
 
                             >
@@ -113,7 +114,7 @@ const Dock = () => {
                                     width={150}
                                     height={50}
                                 />
-
+{app.isOpen && <span className="">.</span>}
                             </button>
                         </div>
                     )
