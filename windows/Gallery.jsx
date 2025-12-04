@@ -11,6 +11,7 @@ import clsx from 'clsx'
 const Gallery = () => {
     const { activeGalleryLocation, setActiveGalleryLocation } = useGalleryStore();
     const { openWindow } = useWindowStore();
+console.log(activeGalleryLocation);
 
     const renderCategories = (name, list) => {
         return <div className="p-0">
@@ -42,6 +43,8 @@ const Gallery = () => {
 
     const openItem = (item) => {
         if (item.fileType === "img") {
+            console.log(item);
+            
             return openWindow("imgfile", item)
         }
         if (item.kind === "folder") {
@@ -51,7 +54,7 @@ const Gallery = () => {
 
     return (
         <>
-            <div className="flex gap-4 h-full w-full">
+            <div className="flex p-3 gap-4 h-full w-full">
                 <div className="sidebar bg-[#f6fbfc] border border-white p-3 gap-3 flex flex-col shadow-2xl rounded-3xl">
                     <div className="">
                         <WindowControls target="photos" />
@@ -61,6 +64,8 @@ const Gallery = () => {
                 <div className="gallery flex-1 overflow-auto">
                     <ul>
                         {activeGalleryLocation?.children?.map((item) => {
+                            console.log(item);
+                            
                             return (
                                 <li key={item.id} onClick={() => openItem(item)}>
                                     <Image height={400} width={400} src={item.imageUrl} alt={item.name} />
