@@ -32,19 +32,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="">
-                    <ul>
-                        {navIcons.map(({ id, img }) => {
-                            return <li key={id}>
-                                <Image
-                                    height={15}
-                                    width={15}
-                                    alt='logo'
-                                    src={img}
-                                />
-                            </li>
-                        })}
-                    </ul>
-                    <time >{dayjs().format('ddd MMM D h:mm A')}</time>
+                    
+                    <time >{dayjs().format('ddd D MMM  h:mm')}</time>
                 </div>
             </nav>
         </header>

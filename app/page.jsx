@@ -15,6 +15,7 @@ import Finder from '@/windows/Finder'
 import Contact from '@/windows/Contact'
 import Home from '@/components/Home'
 import TextFile from '@/windows/TextFile'
+import ImgFile from '@/windows/ImgFile'
 
 gsap.registerPlugin(Draggable)
 
@@ -31,6 +32,7 @@ const page = () => {
       <Finder/>
       <Contact/>
       <TextFile/>
+      <ImgFile/>
     </main>
   )
 }
