@@ -222,7 +222,7 @@ const MEMORIES_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-5 left-10",
-      imageUrl: "/images/Con.jpeg",
+      imageUrl: "/images/con.jpeg",
     },
     {
       id: 2,
