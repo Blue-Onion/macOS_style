@@ -14,8 +14,8 @@ const Gallery = () => {
 console.log(activeGalleryLocation);
 
     const renderCategories = (name, list) => {
-        return <div className="p-0">
-            <h3 className='font-bold text-gray-500 text-md'>
+        return <div className="space-y-4 p-1">
+            <h3 className='font-semibold text-gray-500 text-sm'>
                 {name}
             </h3>
             <ul>
