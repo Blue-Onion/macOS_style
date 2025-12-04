@@ -162,33 +162,207 @@ const socials = [
   },
 ];
 
-const photosLinks = [
-  {
-    id: 1,
-    icon: "/icons/gicon1.svg",
-    title: "Library",
-  },
-  {
-    id: 2,
-    icon: "/icons/gicon2.svg",
-    title: "Memories",
-  },
-  {
-    id: 3,
-    icon: "/icons/file.svg",
-    title: "Places",
-  },
-  {
-    id: 4,
-    icon: "/icons/gicon4.svg",
-    title: "People",
-  },
-  {
-    id: 5,
-    icon: "/icons/gicon5.svg",
-    title: "Favorites",
-  },
-];
+const LIBRARY_LOCATION = {
+  id: 1,
+  type: "library",
+  name: "Library",
+  icon: "/icons/gicon1.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Sunset Beach",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-5",
+      imageUrl: "/images/gal1.png",
+    },
+    {
+      id: 2,
+      name: "Mountain Vista",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 right-20",
+      imageUrl: "/images/gal2.png",
+    },
+    {
+      id: 3,
+      name: "City Lights",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-40 left-40",
+      imageUrl: "/images/gal3.png",
+    },
+    {
+      id: 4,
+      name: "Forest Path",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 right-80",
+      imageUrl: "/images/gal4.png",
+    },
+  ],
+};
+
+const MEMORIES_LOCATION = {
+  id: 2,
+  type: "memories",
+  name: "Memories",
+  icon: "/icons/gicon2.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Summer 2024",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-5 left-10",
+      imageUrl: "/images/gal1.png",
+    },
+    {
+      id: 2,
+      name: "Birthday Party",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-28 right-72",
+      imageUrl: "/images/gal2.png",
+    },
+    {
+      id: 3,
+      name: "Graduation Day",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 left-80",
+      imageUrl: "/images/gal3.png",
+    },
+  ],
+};
+
+const PLACES_LOCATION = {
+  id: 3,
+  type: "places",
+  name: "Places",
+  icon: "/icons/file.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Paris",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-5",
+      imageUrl: "/images/gal1.png",
+    },
+    {
+      id: 2,
+      name: "Tokyo",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-20 left-80",
+      imageUrl: "/images/gal2.png",
+    },
+    {
+      id: 3,
+      name: "New York",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 right-20",
+      imageUrl: "/images/gal3.png",
+    },
+    {
+      id: 4,
+      name: "Barcelona",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-60 left-40",
+      imageUrl: "/images/gal4.png",
+    },
+  ],
+};
+
+const PEOPLE_LOCATION = {
+  id: 4,
+  type: "people",
+  name: "People",
+  icon: "/icons/gicon4.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Family",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-10",
+      imageUrl: "/images/gal1.png",
+    },
+    {
+      id: 2,
+      name: "Friends",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-40 left-80",
+      imageUrl: "/images/gal2.png",
+    },
+  ],
+};
+
+const FAVORITES_LOCATION = {
+  id: 5,
+  type: "favorites",
+  name: "Favorites",
+  icon: "/icons/gicon5.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Best Shot 1",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-5 left-5",
+      imageUrl: "/images/gal1.png",
+    },
+    {
+      id: 2,
+      name: "Best Shot 2",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-28 right-20",
+      imageUrl: "/images/gal2.png",
+    },
+    {
+      id: 3,
+      name: "Best Shot 3",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 left-60",
+      imageUrl: "/images/gal3.png",
+    },
+  ],
+};
+
+const photosLinks = {
+  library: LIBRARY_LOCATION,
+  memories: MEMORIES_LOCATION,
+  places: PLACES_LOCATION,
+  people: PEOPLE_LOCATION,
+  favorites: FAVORITES_LOCATION,
+};
 
 const gallery = [
   {

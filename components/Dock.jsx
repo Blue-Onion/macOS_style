@@ -8,7 +8,7 @@ import React, { useRef } from 'react'
 import { Tooltip } from 'react-tooltip';
 
 const Dock = () => {
-    const {openWindow,focusWindow,windows}=useWindowStore();
+    const { openWindow, focusWindow, windows } = useWindowStore();
     const dockRef = useRef(null);
     useGSAP(() => {
         const dock = dockRef.current;
@@ -73,17 +73,16 @@ const Dock = () => {
         };
     }, [])
     const toggleApp = (app) => {
-        if(!app.canOpen) return ;
-        const window=windows[app.id]
-        console.log(window);
-        
-        if(window.isOpen){
+        if (!app.canOpen) return;
+        const window = windows[app.id]
+
+        if (window.isOpen) {
             focusWindow(app.id);
-        }else{
+        } else {
             openWindow(app.id);
         }
 
-        
+
     }
     return (
         <section id='dock'>
@@ -114,7 +113,7 @@ const Dock = () => {
                                     width={150}
                                     height={50}
                                 />
-{app.isOpen && <span className="">.</span>}
+                                {app.isOpen && <span className="">.</span>}
                             </button>
                         </div>
                     )

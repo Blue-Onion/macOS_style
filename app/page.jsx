@@ -16,6 +16,7 @@ import Contact from '@/windows/Contact'
 import Home from '@/components/Home'
 import TextFile from '@/windows/TextFile'
 import ImgFile from '@/windows/ImgFile'
+import Gallery from '@/windows/Gallery'
 
 gsap.registerPlugin(Draggable)
 
@@ -33,6 +34,7 @@ const page = () => {
       <Contact/>
       <TextFile/>
       <ImgFile/>
+      <Gallery/>
     </main>
   )
 }

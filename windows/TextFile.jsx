@@ -12,9 +12,8 @@ const TextFile = () => {
 
     const data = windows?.txtfile?.data;
     if (!data) return;
-    console.log(data);
-    
-    const { description,image } = data;
+
+    const { description, image } = data;
 
 
 
