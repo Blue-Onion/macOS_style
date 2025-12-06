@@ -11,14 +11,14 @@ const Loading = () => {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Initial setup - hide everything
+
             gsap.set([logoRef.current, textRef.current], { opacity: 0, scale: 0.8 })
             gsap.set(dotsRef.current, { opacity: 0, y: 10 })
 
-            // Create timeline for smooth sequential animations
+
             const tl = gsap.timeline()
 
-            // Fade in and scale up the logo
+
             tl.to(logoRef.current, {
                 opacity: 1,
                 scale: 1,
